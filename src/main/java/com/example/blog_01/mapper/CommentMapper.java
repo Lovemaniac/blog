@@ -12,7 +12,7 @@ public interface CommentMapper {
     @Select("SELECT * FROM comment WHERE article_id = #{articleId}")
     List<Comment> getCommentsByArticleId(Long articleId);
 
-@Insert("INSERT INTO comment (article_id, user_id, content, create_time) VALUES (#{articleId}, #{userId}, #{content}, #{createTime})")
+@Insert("INSERT INTO comment (article_id, username, content, create_time) VALUES (#{articleId}, #{userId}, #{content}, #{createTime})")
     int addComment(Comment comment);
 }
 

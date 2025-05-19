@@ -14,8 +14,9 @@ public interface ArticleMapper {
 
     @Insert("INSERT INTO article (title, content, user_id, category_id) VALUES (#{title}, #{content}, #{userId}, #{categoryId})")
     int insertArticle(Article article);
-    @Select("SELECT * FROM article ")
+    @Select("SELECT * FROM article")
     List<Article> getAllArticles();
     @Select("SELECT * FROM article WHERE category_id = #{categoryId}")
+    //This method returns a list of articles based on the category id
     List<Article> getArticlesByCategory(Long categoryId);
 }
