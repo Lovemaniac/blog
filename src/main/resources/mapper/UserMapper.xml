@@ -1,0 +1,5 @@
+<mapper namespace="com.example.blog_01.mapper.UserMapper">
+    <select id="getUserById" resultType="com.example.blog.model.User">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+</mapper>

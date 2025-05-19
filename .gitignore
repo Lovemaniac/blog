@@ -1,0 +1,13 @@
+# 编译输出
+/target/
+
+# IDEA 项目文件
+*.iml
+.idea/
+
+# 日志文件
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
