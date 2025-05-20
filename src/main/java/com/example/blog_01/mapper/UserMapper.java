@@ -11,7 +11,7 @@ public interface UserMapper {
     User getUserById(Long id);
 
 
-    @Insert("INSERT INTO user (username, password) VALUES (#{username}, #{password})")
+    @Insert("INSERT INTO user (username, password,role) VALUES (#{username}, #{password}, #{role})")
     int register(User user);
 
    @Select("SELECT * FROM user WHERE username = #{username}")

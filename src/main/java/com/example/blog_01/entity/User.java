@@ -11,6 +11,7 @@ public class User {
     private String password;
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date create_time;
+    private String role; // 新添加的角色字段
 
     // Getters and Setters
 }
